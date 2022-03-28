@@ -1,0 +1,39 @@
+<form [formGroup]="petForm" (ngSubmit)="addPet()">
+
+    <div class="form-group">
+      <label for="petName">pet name</label>
+      <input formControlName="petName" type="text" class="form-control" id="petName"  placeholder="petName">
+    </div>
+
+    <div class="form-group mt-3">
+      
+          <label for="petDescription">description</label>
+          <textarea formControlName="petDescription" id="petDescription" class="form-control"></textarea>
+     
+    </div>
+
+    <div class="form-group mt-3">
+     
+      
+        <label for="petImage">image</label>
+       <input type="text" formControlName="petImage" id="petImage" class="form-control">
+   
+  </div>
+
+  <div class="form-group mt-3">
+     
+      
+    <label for="petType ">petType</label>
+   <input type="text" formControlName="petType" id="petType" class="form-control">
+
+</div>
+
+<div class="form-group mt-3">
+         
+  <button type="submit" class="btn btn-primary"  >confirmer</button>
+
+</div>
+
+  </form>
+
+

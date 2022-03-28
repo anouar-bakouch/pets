@@ -1,0 +1,16 @@
+<div class="col">
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" width="170" height="170" [src]="pet.petImage" alt="{{pet.petName}}">
+    <div class="card-body">
+      <h5 class="card-title">{{pet.petName}}</h5>
+      <p class="card-text">{{pet.petDescription}}</p>
+   
+      <div class="col-12 d-flex justify-content-between">
+      <button class="btn btn-primary" ><i (click)="likePet(pet)" [class]="pet.petLike ? 'bi bi-heart-fill' : 'bi bi-heart' "></i></button> <!--fill>-->
+      <button class="btn btn-primary" type="button" (click)="deletePet(pet)" >delete</button>
+      </div>
+    </div>
+  </div>
+
+</div>  
